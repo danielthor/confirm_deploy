@@ -7,8 +7,8 @@ Gem::Specification.new do |gem|
   gem.version       = "0.0.1"
   gem.authors       = ["Daniel Thor"]
   gem.email         = ["daniel.thor@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Confirm before deploy in Capistrano}
+  gem.summary       = %q{Let user confirm before deploying app with Capistrano.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
