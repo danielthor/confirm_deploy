@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["daniel.thor@gmail.com"]
   gem.description   = %q{Confirm before deploy in Capistrano}
   gem.summary       = %q{Let user confirm before deploying app with Capistrano.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/danielthor/confirm_deploy"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
