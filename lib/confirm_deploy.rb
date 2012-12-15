@@ -1,4 +1,4 @@
-require "confirm_deploy/version"
+require 'confirm_deploy/version'
 require 'capistrano/configuration'
 
 Capistrano::Configuration.instance(:must_exist).load do
