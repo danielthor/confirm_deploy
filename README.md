@@ -1,6 +1,6 @@
 # ConfirmDeploy
 
-TODO: Write a gem description
+Simple capistrano recipe to get user(s) to confirm before deploying an app.
 
 ## Installation
 
@@ -18,7 +18,37 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add to your capistrano deploy.rb
+
+	require 'confirm_deploy'
+
+## Examples
+
+Confirmed deploy:
+
+	$ cap deploy
+	  * 2012-12-15 14:52:11 executing `deploy'
+	  * 2012-12-15 14:52:11 executing `deploy:update'
+	 ** transaction: start
+	  * 2012-12-15 14:52:11 executing `deploy:update_code'
+	    triggering before callbacks for `deploy:update_code'
+	  * 2012-12-15 14:52:11 executing `deploy:confirm'
+	 ** Deploying...
+	  Are you sure you want to deploy? (yes): yes
+	...
+
+Unconfirmed deploy:
+
+	$ cap deploy
+	  * 2012-12-15 14:52:11 executing `deploy'
+	  * 2012-12-15 14:52:11 executing `deploy:update'
+	 ** transaction: start
+	  * 2012-12-15 14:52:11 executing `deploy:update_code'
+	    triggering before callbacks for `deploy:update_code'
+	  * 2012-12-15 14:52:11 executing `deploy:confirm'
+	 ** Deploying...
+	  Are you sure you want to deploy? (yes): no
+	*** Deploy cancelled!
 
 ## Contributing
 
