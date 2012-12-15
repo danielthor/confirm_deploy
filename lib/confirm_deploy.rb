@@ -7,7 +7,7 @@ Capistrano::Configuration.instance(:must_exist).load do
     task :confirm do
       unless Capistrano::CLI.ui.ask("  Are you sure you want to deploy? (yes): ") == 'yes'
         logger.important "Deploy cancelled!"
-        exit
+        abort
       end
     end
     before "deploy:update_code", "deploy:confirm"
