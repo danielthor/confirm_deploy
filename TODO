@@ -1,0 +1,12 @@
+TODO
+
+ * --no_confirm flag to skip confirmation
+
+ * Show optional STAGE being deployed
+
+ * Show optional BRANCH being deployed
+
+ * Show to what servers code is being deployed
+   What roles? web, app, db? Affected roles.
+
+ * Option to set what tasks needs confirmation
