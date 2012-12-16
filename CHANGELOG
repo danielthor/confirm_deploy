@@ -1,3 +1,9 @@
+Release 1.x.x
+-------------
+
+ * Ability to customize message and answer via optional variables
+   confirm_message & confirm_answer. See README for more information.
+
 Release 1.0.0
 -------------
 

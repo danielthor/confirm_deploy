@@ -22,6 +22,13 @@ Add to your capistrano deploy.rb
 
 	require 'confirm_deploy'
 
+## Customize
+
+You can set the optional variables `confirm_message` and `confirm_answer` if you want: 
+
+	set :confirm_message, "You know what you're doing?"
+	set :confirm_answer, "yepp"
+
 ## Examples
 
 Confirmed deploy:
